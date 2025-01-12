@@ -3,11 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>test</title>
+    <title>Search Images</title>
+    <script type="module" crossorigin src="/goit-js-hw-12/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-tnUJPedx.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-CWKLx11g.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-DE4zXa6H.css">
   </head>
   <body>
-    <h1>Hello</h1>
+    <header>
+      <h1>Hello Gallery</h1>
+    </header>
+    <main>
+      <form class="search-form">
+        <input
+          class="form-input"
+          type="text"
+          name="searchInput"
+          placeholder="Search image"
+        />
+        <button class="form-btn">Search</button>
+      </form>
 
-    <script src="./main.js"></script>
+      <p class="loader"><span class="loader-line"></span>Loading...</p>
+
+      <ul class="gallery"></ul>
+
+      <button class="load-more-btn" style="display: none">Load more</button>
+    </main>
   </body>
 </html>
